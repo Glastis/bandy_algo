@@ -4,7 +4,75 @@
 -- Time: 18:59
 --
 
-function core()
+local db = require('database')
+local constant = require('constants')
+local utilitie = require('utilities')
 
+-- DIFFERENT SCORE SCRIPTS
+local view = require('score/views')
+
+-- CONSTANTS
+local COLLECTION_ARTIST = constant.COLLECTION_ARTIST
+local COLLECTION_LABEL = constant.COLLECTION_LABEL
+
+function score_artist(stat_view, artist, label)
+    local score
+
+    score = view.get_score_stat(stat_view, artist)
+    -- add here other scores
+    return score
 end
 
+function score_all_artists(stat_view, label)
+    local id
+    local collection
+    local retval
+    local result
+
+    id = 1
+    retval = {}
+    collection = db.get_collection(constant.COLLECTION_ARTIST)
+    result = collection:find_one({_id = id})
+    while result do
+        retval[#retval + 1] = {}
+        retval[#retval]._id = id
+        retval[#retval].score = score_artist(stat_view, result, label)
+        id = id + 1
+        result = collection:find_one({_id = id})
+    end
+    return retval
+end
+
+function score_label(stat_view)
+    local collection
+    local id
+    local result
+    local artist_score
+
+    id = 1
+    collection = db.get_collection(constant.COLLECTION_LABEL)
+    result = collection:find_one({_id = id})
+    while result do
+        artist_score = score_all_artists(stat_view, result)
+        utilitie.var_dump(artist_score, true)
+        collection:update_one({_id = id}, {["$set"] = {artist_score = artist_score}})
+        id = id + 1
+        result = collection:find_one({_id = id})
+    end
+    return true
+end
+
+function score_core()
+    local stat_view
+
+    stat_view = view.get_stats_view_artists()
+    score_label(stat_view)
+end
+
+function core()
+    print('Score calc begin')
+    score_core()
+    print('Score calc done')
+end
+
+core()

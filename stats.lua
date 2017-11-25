@@ -5,6 +5,7 @@
 --
 
 local constant = require('constants')
+local utilitie = require('utilities')
 
 local stat = {}
 
@@ -30,7 +31,7 @@ local function average(value_table)
         retval = retval + value_table[i]
         i = i - 1
     end
-    return retval / #value_table
+    return math.floor(retval / #value_table)
 end
 stat.average = average
 

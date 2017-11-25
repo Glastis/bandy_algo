@@ -21,6 +21,7 @@ function insert_labels()
         elem = {}
         elem._id = i
         elem.name = "label_" .. tostring(i)
+        elem.artist_score = "empty"
         data[i] = elem
         i = i + 1
     end

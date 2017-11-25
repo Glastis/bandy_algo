@@ -90,7 +90,7 @@ local function debug_info(more, calltrace)
 end
 utilities.debug_info = debug_info
 
-local function var_dump(var)
+local function var_dump(var, printval)
     if type(var) == 'table' then
         local s
 
@@ -101,7 +101,13 @@ local function var_dump(var)
             end
             s = s .. '\n[' .. k .. '] = ' .. var_dump(v) .. ','
         end
+        if printval then
+            print(tostring(s .. '\n}'))
+        end
         return s .. '\n} '
+    end
+    if printval then
+        print(tostring(var))
     end
     return tostring(var)
 end
