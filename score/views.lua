@@ -4,10 +4,10 @@
 -- Time: 03:06
 --
 
-local stat = require('../stats')
-local db = require('database')
-local utilitie = require('utilities')
-local constant = require('constants')
+local stat = require('common.stats')
+local db = require('common.database')
+local utilitie = require('common.utilities')
+local constant = require('common.constants')
 
 local views = {}
 
@@ -51,6 +51,7 @@ local function get_stats_view_artists()
         youtube[#youtube + 1] = result.view_youtube
         twitter[#twitter + 1] = result.view_twitter
         soundcloud[#soundcloud + 1] = result.view_soundcloud
+        print('artist ' .. id .. ' done')
         id = id + 1
     end
     return false

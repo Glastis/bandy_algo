@@ -4,12 +4,12 @@
 -- Time: 14:57
 --
 
-local db = require('database')
-local constant = require('constants')
-local u = require('utilities')
+local db = require('common.database')
+local constant = require('common.constants')
+local u = require('common.utilities')
 
 -- TEST DATABASE CONSTANTS
-local ARTIST_AMOUNT = 50
+local ARTIST_AMOUNT = 1000
 local LABEL_AMOUNT = 10
 
 function insert_labels()

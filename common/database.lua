@@ -6,8 +6,8 @@
 
 -- REQUIRES
 local mongo = require('mongorover.MongoClient')
-local utilities = require('utilities')
-local constant = require('constants')
+local utilities = require('common.utilities')
+local constant = require('common.constants')
 
 -- CONSTANTS
 local DATABASE_NAME = constant.DATABASE_NAME

@@ -4,16 +4,12 @@
 -- Time: 18:59
 --
 
-local db = require('database')
-local constant = require('constants')
-local utilitie = require('utilities')
+local db = require('common.database')
+local constant = require('common.constants')
+local utilitie = require('common.utilities')
 
--- DIFFERENT SCORE SCRIPTS
+-- DIFFERENTS SCORES SCRIPTS
 local view = require('score/views')
-
--- CONSTANTS
-local COLLECTION_ARTIST = constant.COLLECTION_ARTIST
-local COLLECTION_LABEL = constant.COLLECTION_LABEL
 
 function score_artist(stat_view, artist, label)
     local score
@@ -54,8 +50,9 @@ function score_label(stat_view)
     result = collection:find_one({_id = id})
     while result do
         artist_score = score_all_artists(stat_view, result)
-        utilitie.var_dump(artist_score, true)
+--        utilitie.var_dump(artist_score, true) -- debug/dev stuff, should be commented in prod
         collection:update_one({_id = id}, {["$set"] = {artist_score = artist_score}})
+        print('Label: ' .. tostring(result.name) .. ' done')
         id = id + 1
         result = collection:find_one({_id = id})
     end

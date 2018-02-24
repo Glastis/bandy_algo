@@ -1,0 +1,1329 @@
+Hard rock > Heavy metal
+Hard rock > Power pop
+Hard rock > Grunge
+Hard rock > Punk rock
+Hard rock > Glam rock
+Hard rock > Sleaze rock
+Hard rock > NWoBHM
+Blues rock > Hard rock
+Blues rock > Pop rock
+Blues rock > Heavy metal
+Blues rock > Stoner rock
+Blues rock> Grunge
+Psychedelic rock > Hard rock
+Psychedelic rock > Glam rock
+Psychedelic rock > Heavy metal
+Psychedelic rock > Krautrock
+Psychedelic rock > Progressive rock
+Psychedelic rock > Stoner rock
+Psychedelic rock > Disco
+Psychedelic rock > Fusion
+RnB > Blues rock
+RnB > Soul
+RnB > Psychedelic rock
+RnB > Rock & roll
+RnB > Reggae
+RnB > Funk
+RnB > Beat
+RnB > Pub rock
+RnB > Garage rock
+RnB > Hip hop
+RnB > Fusion
+RnB > Contemporary RnB
+Heavy metal > Stoner rock
+Heavy metal > Grunge
+Heavy metal > NWoBHM
+Heavy metal > Punk rock
+Garage rock > Hard rock
+Garage rock > Punk rock
+Garage rock > Glam rock
+Garage rock > Psychedelic rock
+Garage rock > Pub rock
+Garage rock > Power pop
+Blues > RnB
+Blues > Jazz
+Blues > Bluegrass
+Blues > Rock & roll
+Blues > Honky tonk
+Blues > Country
+Blues > Doo wop
+Blues > Skiffle
+Jazz > Fusion
+Power pop > New wave
+Boogie woogie > RnB
+Boogie woogie > Rock & roll
+Boogie woogie > Jump blues
+Boogie woogie > Swing
+Boogie woogie > Rockabilly
+Gospel > RnB
+Gospel > Soul
+Gospel > Rock & roll
+Gospel > Doo wop
+Soul > Funk
+Soul > Contemporary RnB
+Soul > Disco
+Soul > Hip hop
+Soul > Pop
+Pop rock > Glam rock
+Pop rock > Progressive rock
+Pop rock > Power pop
+Punk rock > New wave
+Punk rock > Alternative rock
+Punk rock > Post punk
+Punk rock > Grunge
+Punk rock > Sleaze rock
+Punk rock > NWoBHM
+Punk rock > Thrash metal
+Surf rock > Punk rock
+Glam rock > Punk rock
+Glam rock > New wave
+Glam rock > Synthpop
+Glam rock > Post punk
+Pub rock > Punk rock
+Pub rock > New wave
+Folk > Blues
+Folk > Jazz
+Folk > Ragtime
+Folk music > Trad. pop
+Folk > Country
+Folk > Skiffle
+Folk > Folk rock
+Folk > Pop
+Spiritual > Gospel
+Spiritual > Blues
+Folk rock > Psychedelic rock
+Folk rock > Pop rock
+Folk rock > Progressive rock
+Progressive rock > Krautrock
+Progressive rock > Post punk
+Krautrock > Synthpop
+Krautrock > Post punk
+Funk > New wave
+Funk > Disco
+Funk > Hip hop
+Funk > Fusion
+Funk > Contemporary RnB
+Funk > Krautrock
+Classical > Jazz
+Classical > Ragtime
+Classical > Progressive rock
+Classical > Pop
+Disco > New wave
+Disco > Synthpop
+Disco > Hip hop
+Disco > House
+Jump blues > RnB
+Jump blues > Rock & roll
+Jump blues > Doo wop
+Jump blues > Surf rock
+Reggae > New wave
+Reggae > Hip hop
+Marches > Jazz
+Marches > Ragtime
+Work songs > Blues
+Rock & roll > Surf rock
+Rock & roll > Garage rock
+RnB > Hard rock
+Rock & roll > Glam rock
+Rock & roll > Punk rock
+Rock & roll > Rockabilly
+Rock & roll > Pop
+Rock & roll > Beat
+Rock & roll > Pub rock
+Doo wop > Soul
+Doo wop > Beat
+Doo wop > Surf rock
+Rockabilly > Punk rock
+Rockabilly > Surf rock
+Honky tonk > Rock & roll
+Honky tonk > Rockabilly
+Broadway > Trad. pop
+Beat > Garage rock
+Beat > Psychedelic rock
+Beat > Power pop
+Beat > Folk rock
+Beat > Pop rock
+Beat > Pub rock
+Beat > Pop
+Skiffle > Beat
+New wave > Synthpop
+New wave > Alternative rock
+Barbershop > Doo wop
+Synthpop > House
+Bebop > Fusion
+Fusion > Progressive rock
+Fusion > Krautrock
+Doom metal > Stoner rock
+Post punk > Indie rock
+Post punk > Alternative rock
+Post punk > Synthpop
+House > Techno
+NWoBHM > Hardcore punk
+NWoBHM > Speed metal
+NWoBHM > Thrash metal
+NWoBHM > Power metal
+hardcore punk > Grunge
+Hardcore punk > Alternative rock
+Hardcore punk > Speed metal
+Hardcore punk > Thrash metal
+Speed metal > Thrash metal
+Speed metal > Power metal
+Thrash metal > Groove metal
+Hardcore punk > Groove metal
+Grunge > Nu metal
+Hip hop > Nu metal
+Groove metal > Nu metal
+Progressive rock > Glam rock
+Glam rock > Sleaze rock
+Black metal > Gothic metal
+Classical > Gospel
+Classical > Broadway
+Jump blues > Electric blues
+Delta blues > Chicago blues
+Chicago blues > Electric blues
+Delta blues > Electric blues
+Electric blues > RnB
+Electric blues > Rock & roll
+Electric blues > Rockabilly
+Electric blues > Blues rock
+Electric blues > Soul
+Electric blues > Hard rock
+Country rock > Southern rock
+Rockabilly > Country rock
+Folk rock > Country rock
+Rock & roll > Southern rock
+Blues rock > Southern rock
+Rockabilly > Southern rock
+Hip hop > Trip hop
+House > Trip hop
+Reggae > Dub
+Rocksteady > Reggae
+Rocksteady > Dub
+Dub > Hip hop
+Dub > Post punk
+Dub > House
+Dub > Trip hop
+Hardcore punk > Death metal
+Death metal > Death-doom
+Doom metal > Death-doom
+Death-doom > Gothic metal
+Death-doom > Funeral doom
+Glam rock > Gothic rock
+Psychedelic rock > Gothic rock
+Punk rock > Gothic rock
+Gothic rock > Gothic metal
+Hip hop > Contemporary RnB
+Krautrock > Ambient
+Psychedelic rock > Ambient
+Dub > Ambient
+Progressive rock > Ambient
+Ambient > Trance
+House > Trance
+Techno > Trance
+Pop > Trance
+Hard rock > Doom metal
+Psychedelic rock > Doom metal
+Folk > Western
+Western > Country
+Folk > Appalachian
+Appalachian > Country
+Blues > Appalachian
+Appalachian > Bluegrass
+Bluegrass > Country rock
+Funk > Funk rock
+Psychedelic rock > Funk rock
+Hard rock > Funk rock
+Rock & roll > Funk rock
+Progressive rock > Funk rock
+Funk rock > Funk metal
+Funk metal > Nu metal
+Thrash metal > Funk metal
+Power pop > Pub rock
+Country rock > Pub rock
+Folk rock > Pub rock
+Grunge > Post-grunge
+Alternative metal > Post-grunge
+Glam rock > Glam metal
+Hard rock > Glam metal
+Punk rock > Glam metal
+Glam metal > Sleaze rock
+Folk rock > Folk punk
+Folk > Folk punk
+Folk punk > Anti-folk
+Punk rock > Anti-folk
+Folk > Anti-folk
+Power pop > Pop punk
+Punk rock > Pop punk
+Pop rock > Pop punk
+Pop > Pop punk
+Surf rock > Pop punk
+Garage rock > Pop punk
+New wave > Pop punk
+Hardcore punk > Sludge metal
+Doom metal > Sludge metal
+Southern rock > Sludge metal
+New wave > Indie rock
+Indie rock > Britpop
+Beat > Britpop
+Glam rock > Britpop
+Power pop > Britpop
+Punk rock > Britpop
+Punk rock > Noise rock
+Garage rock > Noise rock
+Classical > Noise rock
+Noise rock > Post hardcore
+Post punk > Post hardcore
+Krautrock > Industrial metal
+Post punk > Industrial metal
+Noise rock > Industrial metal
+Hardcore punk > Industrial metal
+Thrash metal > Industrial metal
+Industrial > Industrial metal
+Latin > Mento, calypso
+Latin > Disco
+Krautrock > Industrial
+Industrial metal > Nu metal
+Pop rock > Euro disco
+New wave > Euro disco
+House > Eurodance
+Techno > Eurodance
+Reggae > Eurodance
+Trance > Eurodance
+Boogie woogie > House
+Post punk > House
+Punk rock > Ska punk
+Hardcore punk > Ska punk
+Punk rock > 2 Tone
+Rocksteady > 2 Tone
+Reggae > 2 Tone
+New wave > 2 Tone
+2 Tone > Ska punk
+Soul > Rocksteady
+RnB > Rocksteady
+Doo wop > Rocksteady
+Ragtime > Honky tonk
+Latin > Mambo
+Swing > Mambo
+Country > Rockabilly
+Country > Southern rock
+Big band > Trad. pop
+Big band > Disco
+Marches > Dixieland
+Blues > Dixieland
+Folk > Gospel
+Folk > Bluegrass
+Swing > Jump blues
+Swing > Electro swing
+Jazz > Electro swing
+Hip hop > Electro swing
+Blues > Hard bop
+RnB > Hard bop
+Gospel > Hard bop
+Soul > Neo soul
+RnB > Neo soul
+Jazz > Neo soul
+Funk > Neo soul
+Hip hop > Neo soul
+House > Neo soul
+Contemporary RnB > Neo soul
+Synthpop > Techno
+Cool jazz > Smooth jazz
+Fusion > Smooth jazz
+Pop > Smooth jazz
+RnB > Smooth jazz
+Funk > Smooth jazz
+Hard bop > Soul
+Doo wop > Pop
+Trad. pop > Doo wop
+Post punk > Gothic rock
+Honky tonk > Boogie woogie
+Swing > Rock & roll
+Folk > Rock & roll
+Country > Rock & roll
+RnB > Rockabilly
+Jump blues > Rockabilly
+Rockablilly > Psychobilly
+Punk rock > Psychobilly
+Garage rock > Psychobilly
+Rock & roll > Psychobilly
+RnB > Psychobilly
+Blues > Rockabilly
+Blues > Psychobilly
+RnB > Doo wop
+Work songs > Swing
+Progressive rock > Progressive metal
+Power metal > Progressive metal
+Fusion > Progressive metal
+Classical > Progressive metal
+Surf rock > Garage rock
+Beat > Pop punk
+Pop > New wave
+Rock & roll > Blues rock
+Blues > Blues rock
+Boogie woogie > Blues rock
+Mambo > Salsa
+Latin > Salsa
+Salsa > Disco
+Latin jazz (Cuban) > Salsa
+Classical > Latin jazz (Brasil)
+Mambo > Latin jazz (Cuban)
+Soul > Boogaloo
+RnB > Boogaloo
+Mambo > Boogaloo
+Latin > Boogaloo
+Boogaloo > Salsa
+Noise rock > Noise pop
+Power pop > Noise pop
+Pop rock > Noise pop
+Post punk > Noise pop
+Noise pop > Shoegazing
+Indie rock > Shoegazing
+Garage rock > Shoegazing
+Dream pop > Shoegazing
+Psychedelic rock > Shoegazing
+Post punk > Dream pop
+Shoegazing > Post rock
+Krautrock > Post rock
+Ambient > Post rock
+Black metal > Viking metal
+Death metal > Viking metal
+Folklore, myths> Viking metal
+Viking metal > Pagan metal
+Folk metal > Pagan metal
+Folk rock > Folk metal
+Folk metal > Viking metal
+Black metal > Pagan metal
+Folklore, myths > Pagan metal
+Black metal > Folk metal
+Thrash metal > Folk metal
+New wave > Neue Deutsche Welle
+Punk rock > Neue Deutsche Welle
+Post punk > Neue Deutsche Welle
+Schlager > Neue Deutsche Welle
+Operetta > Schlager
+Operetta > Broadway
+Classical > Operetta
+Jazz > Schlager
+Broadway > Schlager
+Classical > Schlager
+Pop rock > Neue Deutsche Welle
+Krautrock > Neue Deutsche Welle
+Neue Deutsche Welle > Neue Deutsche Harte
+Groove metal > Neue Deutsche Harte
+Alternative metal > Neue Deutsche Harte
+Industrial > Neue Deutsche Harte
+Techno > Neue Deutsche Harte
+Funk > House
+Pop rock > Disco
+RnB > Sophisti-pop
+Soul > Sophisti-pop
+Pop rock > Sophisti-pop
+Fusion > Sophisti-pop
+Mento, calypso > Reggae
+New wave > Dance-pop
+Pub rock > Britpop
+Pub rock > Oi!
+Glam rock > Oi!
+Blues rock > Pub rock
+Funk rock > Post punk
+Thrash metal > Grindcore
+Classical > Heavy metal
+Folk > Folk metal
+Dub > Dancehall
+Reggae > Dancehall
+Rocksteady > Dancehall
+Rapping > Hip hop
+Avant-garde > Krautrock
+Funk > Electro
+Disco > Electro
+Hip hop > Electro
+Synthpop > Electro
+Electro > House
+Electro > Techno
+Doom metal > Gothic metal
+Doom metal > Funeral doom
+Dancehall > Hip hop
+Hip hop > Jungle
+Funk > Jungle
+Techno > Jungle
+Reggae > Jungle
+Dub > Jungle
+Dancehall > Jungle
+House > Jungle
+Pop > Hi-NRG
+Synthpop > Hi-NRG
+Disco > Hi-NRG
+Glam rock > Hi-NRG
+Hi-NRG > Techno
+Hi-NRG > Eurodance
+Hi-NRG > House
+Hi-NRG > Italo disco
+Synthpop > Italo disco
+RnB > Freestyle rap
+Freestyle rap > Breakbeat
+Hip hop > Breakbeat
+Electro > Breakbeat
+Funk > Breakbeat
+Disco > Breakbeat
+Turntablism  > Breakbeat
+Breakbeat > Jungle
+Breakbeat > Drum and bass
+Anarcho-punk > Crust punk
+Speed metal > Crust punk
+Thrash metal > Crust punk
+Crust punk > Grindcore
+Anarcho-punk > Grindcore
+Anarcho-punk > Folk punk
+NWoBHM > Progressive metal
+Oi! > Street punk
+Hardcore punk > Street punk
+Pub rock > Street punk
+NWoBHM > Street punk
+Industrial > Grindcore
+Noise rock > Grindcore
+Death metal > Melodic death
+Black metal > Melodic death
+NWoBHM > Melodic death
+Power metal > Melodic death
+Thrash metal > Melodic death
+Gothic metal > Symphonic metal
+Power metal > Symphonic metal
+NWoBHM > Symphonic metal
+Classical > Symphonic metal
+Post hardcore > Math rock
+Noise rock > Math rock
+Progressive rock > Math rock
+Free jazz > Post hardcore
+Speed metal > Crossover thrash
+Crossover thrash > Metalcore
+Hardcore punk > Metalcore
+Speed metal > Metalcore
+Metalcore > Deathcore
+Metalcore > Mathcore
+Metalcore > Melodic metalcore
+Math rock > Mathcore
+Progressive metal > Mathcore
+Grindcore > Mathcore
+Death metal > Deathcore
+Hardcore punk > Deathcore
+Alternative rock > Trip hop
+Blues > Contemporary RnB
+Western > Western swing
+Blues > Western swing
+Folk > Western swing
+Swing > Western swing
+Dixieland > Western swing
+Western swing > Rockabilly
+Western swing > Rock & roll
+Jazz > Jump blues
+Skiffle > British blues
+Electric blues > British blues
+Jazz > British blues
+British blues > Blues rock
+Gospel > Country
+Chicago blues > Rock & roll
+Chicago blues > Blues rock
+Chicago blues > British blues
+Pop > Neo soul
+RnB > Disco
+Medieval music > Modal jazz
+Music of India > Modal jazz
+Appalachian > Rockabilly
+Post punk > Death rock
+Psychedelic rock > Death rock
+Glam rock > Death rock
+Psychobilly > Gothabilly
+Rockabilly > Gothabilly
+Punk rock > Gothabilly
+Gothic rock > Gothabilly
+Surf rock > Gothabilly
+Deathrock > Gothabilly
+Spiritual > Doo wop
+Doo wop > Rock & roll
+Western > Surf rock
+Country > Surf rock
+Lap steel > Surf rock
+Surf rock > Heavy metal
+Folk > Beat
+Blues rock > Garage rock
+Blues > Garage rock
+Soul > Garage rock
+Rockabilly > Garage rock
+Pop > Garage rock
+Garage rock > Indie rock
+Garage rock > Heavy metal
+Sea shanties > Viking metal
+Folk > Work songs
+Blues rock > Psychedelic rock
+Psychedelic rock> Funk
+Funk > Boogie
+Synthpop > Boogie
+New wave > Boogie
+RnB > Boogie
+Jazz > Boogie
+Boogie > Electro
+Classical > Disco
+Gospel > Disco
+Swing > Disco
+Blues > Disco
+Euro disco > Disco polo
+Disco > Post-disco
+P-Funk > Post-disco
+Soul > Post-disco
+RnB > Post-disco
+Dub > Post-disco
+Post-disco > Italo disco
+Post-disco > Boogie
+Synthpop > Post-disco
+Post-disco > House
+Funk > Post-disco
+Jazz > Post-disco
+Funk > Liquid funk
+Ambient > Liquid funk
+Trance > Liquid funk
+Latin > Liquid funk
+Post-disco > Liquid funk
+Disco > Garage house
+Soul > Garage house
+Gospel > Garage house
+House > Garage house
+Post-disco > Garage house
+Boogie > House
+Progressive rock > Post rock
+Post-disco > Dance-pop
+RnB > Dance-pop
+Reggae > Drum and bass
+British blues > Pub rock
+Folk > Oi!
+Avant-garde > Glam rock
+Bubblegum pop > Pop punk
+Bubblegum pop > Noise pop
+Bubblegum pop > Glam rock
+Bubblegum pop > Punk rock
+Heavy metal > Crust punk
+Heavy metal > Sludge metal
+Dub > Drum and bass
+Dub > Big beat
+Techno > Big beat
+House > Big beat
+Breakbeat > Big beat
+DnB > Big beat
+Hip hop > Big beat
+Alternative rock > Big beat
+Trip hop > Big beat
+Industrial > Big beat
+Punk rock > Big beat
+RnB > Dancehall
+Jazz > Krautrock
+Folk > New age
+New age > Ambient
+Progressive rock > New age
+World music > New age
+New age > Post rock
+New age > Trance
+Doom metal > Drone metal
+Industrial > Drone metal
+Sludge metal > Drone metal
+Stoner rock > Drone metal
+Noise rock > Drone metal
+Hip hop > Drum and bass
+Hip hop > Turntablism
+Post-disco > Breakbeat
+Anarcho-punk > Street punk
+Black metal > Symphonic metal
+Melodic death metal > Melodic metalcore
+Avant-garde > Industrial
+Noise > Industrial
+Avant-garde > Noise
+Classical > Noise
+Noise > Noise pop
+Noise > Noise rock
+Noise > Grindcore
+Death metal > Technical death metal
+Progressive metal > Technical death metal
+Fusion > Technical death metal
+Progressive rock > Technical death metal
+Progressive rock > Melodic hardcore
+Alternative rock > Melodic hardcore
+Melodic hardcore > Skate punk
+Hardcore punk > Skate punk
+Surf rock > Skate punk
+Hip hop > Rap metal
+Rap rock > Rap metal
+Funk rock > Rap rock
+Punk rock > Rap rock
+Psychedelic rock > Rap rock
+Hard metal > Rap rock
+Hip hop > Rap rock
+Rap metal > Nu metal
+Southern rock > Rap rock
+Synthpop > Trance
+Musique concr�te > Industrial
+Musique concr�te > Noise
+Garage house > UK Garage
+Contemporary RnB > UK Garage
+Jungle > UK Garage
+Techno > Drum and bass
+Industrial > Darkcore
+Jungle > Drum and bass
+Industrial > Drum and bass
+House > Drum and bass
+Post punk > Noise rock
+Post punk > Industrial
+Post punk > Dark wave
+New wave > Dark wave
+Synthpop > Dark wave
+Post punk > Shoegazing
+Post punk > Post rock
+Italo disco > Disco polo
+Post hardcore > Emo
+Emo > Screamo
+Pop rock > Glam metal
+New wave > Indie pop
+Post punk > Indie pop
+Power pop > Indie pop
+Pop rock > Indie pop
+Gothic rock > Ethereal wave
+Pop punk > Ethereal wave
+New wave > Ethereal wave
+Ethereal wave > Dream pop
+Ethereal wave > Shoegazing
+Industrial > Dark wave
+Noise pop > Dream pop
+Ambient > Dream pop
+Euro disco > Eurodance
+Euro disco > Italo disco
+Science fiction > Space disco
+Psychedelic rock > Space disco
+Space disco > Synthpop
+Space disco > Hi-NRG
+Space disco > Eurodance
+Space disco > Italo disco
+Disco > Eurodance
+Folk > Indie folk
+Indie rock > Indie folk
+Folk rock > Indie folk
+Folk punk > Indie folk
+Progressive rock > Gothic rock
+New wave > Gothic rock
+Heavy metal > Industrial metal
+Noise rock > Shoegazing
+Noise rock > Powerviolence
+Noise rock > Crust punk
+Noise rock > Sludge metal
+Pop > Disco
+Pop > Indie pop
+Post hardcore > Post-grunge
+Post hardcore > Mathcore
+Avant-garde > Post rock
+Jazz > Post rock
+Dub > Post rock
+Progressive metal > Djent
+Avant-garde > Djent
+Acid house > Techno
+Acid house > Trance
+Acid house > Breakbeat
+Acid house > Big beat
+Acid house > Trip hop
+Italo disco > Techno
+Techno > Goa trance
+Acid house > Goa trance
+Psychedelic rock > Goa trance
+Punk rock > No wave
+Avant-garde > No wave
+Post punk > No wave
+Noise > No wave
+Avant-garde > Mosique concrete
+Grunge > Riot grrrl
+Alternative rock > Riot grrrl
+Hardcore punk > Riot grrrl
+Soul > Psychedelic soul
+RnB > Psychedelic soul
+Psychedelic rock > Psychedelic soul
+Psychedelic soul > Funk
+Psychedelic soul > Disco
+Psychedelic soul > Dub
+Psychedelic soul > Funk rock
+Hip hop > New jack swing
+RnB > New jack swing
+Swing > New jack swing
+Cont. RnB > New jack swing
+Soul > New jack swing
+House > New jack swing
+Funk > New jack swing
+Drum & bass > 2-step garage
+House > 2-step garage
+Contemp. RnB > 2-step garage
+2-step garage > Breakstep
+Breakstep > Dubstep
+2-step garage > Dubstep
+Reggae > Dubstep
+Dub > Dubstep
+Drum & bass > Dubstep
+Techno > Dubstep
+Grime > Dubstep
+2-step garage > Grime
+UK Garage > Grime
+Dancehall > Grimme
+Drum and bass > Grime
+Jungle > Grime
+UK Garage > Dubstep
+Jungle > Speed garage
+Garage house > Speed garaga
+Breakbeat > Breakstep
+Breakbeat > 2-step garage
+Breakbeat > Triphop
+House > UK Garage
+House > Speed garage
+Drum & bass > UK Garage
+Speed garage > Bassline
+Grime > Bassline
+House > Bassline
+Drum & bass > Breakstep
+Groove metal > Djent
+Technical death metal > Djent
+Folk rock > Paisley Underground
+Psychodelic rock > Paisley Underground
+Garage rock > Paisley Underground
+Speed metal > Neoclassical metal
+Classical > Neoclassical metal
+Progressive rock > Neoclassical metal
+Shredding > Neoclassical metal
+Thrash metal > Crossover thrash
+Anarcho-punk > D-beat
+NWoBHM > D-beat
+Street punk > D-beat
+D-beat > Crust punk
+Hardcore punk > Black metal
+Grindcore > Powerviolence
+D-beat > Thrashcore
+Thrashcore > Grindcore
+Thrashcore > Crossover thrash
+Thrashcore > Powerviolence
+Latin > Latin jazz (Cuban)
+Latin > Latin jazz (Brasil)
+Classical > Modal jazz
+Classical > Cool jazz
+Big band > Jump blues
+Swing > Trad. pop
+Swing > Doo wop
+Ragtime > Boogie woogie
+Jazz > Bluegrass
+Jazz > Doo wop
+Jazz > Skiffle
+Jazz > Psychedelic rock
+Jazz > Soul
+Jazz > Funk
+Jazz > Reggae
+Jazz > Rock & roll
+Jazz > RnB
+Ragtime > Jazz
+Dixieland > Swing
+Big band > Swing
+Swing > Bebop
+Swing > Cool jazz
+Swing > Latin jazz (Cuban)
+Bebop > Cool jazz
+Bebop > Hard bop
+Bebop > Latin jazz (Cuban)
+Cool jazz > Modal jazz
+Cool jazz > Latin jazz (Brasil)
+Modal jazz > Free jazz
+Extreme metal > Speed metal
+Ambient > Shoegazing
+Post punk > Jangle pop
+Folk rock > Jangle pop
+Power pop > Jangle pop
+Rock & roll > Jangle pop
+Jangle pop > Paisley Underground
+Jungle > Darkcore
+Electro > Grime
+Hip hop > Grime
+Electronic > Neo soul
+Electronic > Neue Deutsche Harte
+Electronic > Post rock
+Electronic > Synthpop
+Electronic > Krautrock
+Electronic > Euro disco
+Electronic > Post-disco
+Alternative rock > Gothic rock
+Post-rock > Post-metal
+Doom metal > Post metal
+Shoegazing > Post metal
+Post hardcore > Post metal
+Noise rock > Post metal
+Psychodelic rock > Pop rock
+Avant-garde > Anti-folk
+Britpop > Post-Britpop
+Indie rock > Post-Britpop
+Power pop > Post-Britpop
+Latin Jazz > Boogaloo
+Hard bop > Soul jazz
+RnB > Soul jazz
+Gospel > Soul jazz
+Blues > Soul jazz
+Soul > Soul jazz
+Soul jazz > Jazz funk
+Free jazz > Jazz funk
+Funk > Jazz funk
+Soul > Jazz-funk
+RnB > Jazz funk
+Fusion > Jazz funk
+Swing > Gypsy jazz
+Folk > Gypsy jazz
+Avant-garde > Avant-garde jazz
+Free jazz > Avant-garde jazz
+Bebop > Avant-garde jazz
+Classical > Avant-garde jazz
+Avant-garde jazz > Noise rock
+Avant-garde jazz > Math rock
+Synthpop > Sophisti-pop
+Synthpop > Dance-pop
+Bubblegum pop > Dance-pop
+Trad. pop> Pop
+Schlager > Trad. pop
+Chanson > Schlager
+Chanson > Trad. pop
+Chanson > Pop
+Jazz > Chanson
+Folk > Chanson
+Pop rock > Bubblegum
+Garage rock > Bubblegum
+Disco > Dance-pop
+Smooth jazz > Sophisti-pop
+New wave > Sophisti-pop
+Pop > Folk rock
+Pop > Pop rock
+Pop > Contemporary RnB
+Disco > Post punk
+Disco > New jack swing
+Pop > New jack swing
+Dixieland > Kansas City jazz
+Blues > Kansas City jazz
+Ragtime > Kansas City jazz
+Big Band > Kansas City jazz
+Swing > Kansas City jazz
+Kansas City jazz > Bebop
+Delta blues > Detroit blues
+Detroit blues > Electric blues
+Ragtime > Piedmont blues
+British blues > Texas blues
+Swing > Texas blues
+Rockabilly > Texas blues
+Texas blues > Elecrtic b�ues
+Texas blues > Rock & roll
+Texas blues > Blues rock
+Technical death metal > Mathcore
+Jazz > Zydeco
+RnB > Zydeco
+Folk > Zydeco
+Blues > Zydeco
+Dixiland > Louisiana blues
+Zydeco > Louisiana blues
+RnB > Louisiana blues
+Louisiana blues > Swamp blues
+Zydeco > Swamp blues
+Louisiana blues > New Orleans blues
+Dixiland > New Orleans blues
+Calypso > New Orleans blues
+RnB > New Orleans blues
+New Orleans blues > Rock & Roll
+New Orleans blues > Soul
+Folk > Country blues
+Country > Country blues
+Texas blues > West Coast blues
+Jump blues > West Coast blues
+Jazz > West Coast blues
+Electric blues > Texas blues
+Electric blues > New Orleans blues
+Dalta blues > Memphis blues
+Mamphis blues > Rock & roll
+Memphis blues > Electric blues
+Boogie woogie > St. Louis blues
+Jump blues > St. Louis blues
+Ragtime > St. Louis blues
+Death metal > Grindcore
+Extreme metal > Powerviolence
+Swing > Downtempo
+Ambient > Downtempo
+Funk > Downtempo
+Dub > Downtempo
+Hip hop > Downtempo
+House > Downtempo
+Hi-NRG > Downtempo
+Downtempo > Trip hop
+Avant-garde jazz > Fusion
+Folk > Old-time music
+Old-time music > Bluegrass
+Appalachian > Old-time music
+Old-time music > Country
+Mento, calypso > Ska
+Jazz > Ska
+RnB > Ska
+Ska > Rocksteady
+Ska > Reggae
+Ska > 2 Tone
+Ska > Ska punk
+Jazz-funk > Deep house
+Progressive rock > Zeuhl
+Fusion > Zeuhl
+Classical > Zeuhl
+Alternative rock > Dark rock
+Gothic rock > Dark rock
+Krautrock > Dark rock
+Heavy metal > Dark rock
+Rock & roll > Heartland rock
+Garage rock > Heartland rock
+RnB > Heartland rock
+Folk rock >  Heartland rock
+Country rock > Heartland rock
+Jazz-funk > Neo soul
+Fusion > Neo soul
+Jazz-funk > Acid jazz
+Jazz > Acid jazz
+Soul > Acid jazz
+Funk > Acid jazz
+Disco > Acid jazz
+Acid jazz > Nu jazz
+Jazz-funk > Nu jazz
+Fusion > Nu jazz
+Soul jazz > Nu jazz
+Bossa nova > Nu jazz
+Smooth jazz > Nu jazz
+Electro > Nu jazz
+House > Nu jazz
+Techno > Nu jazz
+Electro swing > Nu jazz
+Acid jazz > Trip hop
+Alternative rock > Alternative dance
+Indie rock >  Alternative dance
+Post-disco  > Alternative dance
+House >  Alternative dance
+Post punk > Alternative dance
+Synthpop > Alternative dance
+New wave > Alternative dance
+Techno > Alternative dance
+Gangsta rap > Crunk
+Electro > Crunk
+RnB > Crunk
+Industrial > Power electronics
+Noise > Power electronics
+Industrial > Dark ambient
+Ambient > Dark ambient
+Dark wave > Dark ambient
+Musique concr�te > Dark ambient
+Dark ambient > Drone metal
+Dark ambient > Funeral doom
+Synthpop >Electropunk
+Industrial > Electropunk
+Electropunk > EBM
+EBM > Industrial metal
+Industrial > EBM
+Synthpop > EBM
+No wave > EBM
+EBM > Electro-industrial
+Industrial > Electro-Industrial
+Synthpop > Electro-industrial
+EBM > Techno
+EBM > Goa trance
+EBM > New beat
+Acid house > New beat
+Hi-NRG > New beat
+Synthpop > New beat
+Electro-industrial > Industrial metal
+Acid house > Ambient house
+Ambient > Ambient house
+Ambient house > Trance
+New Beat > Eurodance
+Dark wave > New Beat
+Industrial > New Beat
+Electro-industrial > Dark electro
+Elecrto-industrial > Aggrotech
+EBM > Dark electro
+Techno > Aggrotech
+Trance > Aggrotech
+Industrial metal > Neue Deutsche Harte
+Ethereal wave > Neoclassical dark wave
+Ambient >  Neoclassical dark wave
+Classical > Neoclassical dark wave
+Folk > Neofolk
+Post-punk > Neofolk
+Folk rock > Neofolk
+Dark wave > Neofolk
+Neofolk > Martial industrial
+Neoclassical dark wave > Martial industrial
+Marches > Martial industrial
+Dark ambient > Martial industrial
+Folklore, Myts > Neofolk
+Acid house > IDM
+Techno > IDM
+Breakbeat > IDM
+Industrial > IDM
+Drum and bass > EDM
+Electro > Electro house
+Synthpop > Electro house
+Ambient house > IDM
+Acid house > Acid techno
+Industrial > Acid techno
+Trance > Progressive house
+Deep house > Progressive house
+Progressive rock > Progressive house
+Dub > Progressive house
+Techno > Progressive house
+Eurodance > Progressive house
+Krautrock > New age
+New beat > Hardcore techno
+EBM > Hardcore techno
+Acid house > Hardcore techno
+Industrial > Hardcore techno
+No wave > Noise rock
+Thrash metal > Black metal
+Thrash metal > Death metal
+Death metal > Black metal
+Death metal > Groove metal
+Speed garage > 2-step garage
+Funk > Funk metal
+Funk > P-Funk
+Psychodelic r. > Acid rock
+Acid rock > Hard rock
+Acid rock > Progressive rock
+Alternative dance > Indietronica
+Indie rock > Indietronica
+Synthpop > Indietronica
+IDM > Indietronica
+Punk rock > Cowpunk
+New wave > Cowpunk
+Country > Cowpunk
+Cowpunk > Psychobilly
+New Orleans Jazz > Dixieland
+Ragtime > New Orleans jazz
+Marches > New Orleans Jazz
+Blues > New Orleans Jazz
+Bebop > Neobop
+Hard bop > Neobop
+Free jazz > Neobop
+Fusion > Neobop
+Modal jazz > Neobop
+Gothic metal > Dark rock
+Crunk > Trap
+Garage house > Dance-pop
+Electro swing > New jack swing
+Alternative rock > Alternative metal
+Hardcore punk > Alternative metal
+Extreme metal > Metalcore
+Blast beat > Trashcore
+Blast beat > Extreme metal
+Blast beat > Grindcore
+Hardcore techno > Hardstyle
+House > Hardstyle
+Industrial > Hardstyle
+Shoegazing > Britpop
+Post punk > Cold wave
+New wave > Cold wave
+Neoclassical dark wave > Neue Deutsche Todeskunst
+Gothic rock > Neue Deutsche Todeskunst
+New wave > Electro wave
+Synthpop > Electro wave
+Electropunk > Electro wave
+Post-punk > Electro wave
+German philosophy > NDT
+New wave > Neo-prog
+Progressive rock > Neo-prog
+Hard rock > Neo-prog
+Pop rock > Neo-prog
+Neo-prog > Progressive metal
+Neo-prog > Alternative rock
+Euro disco > Space disco
+Hardcore hip hop > Gangsta rap
+Hardcore hip hop > Trap
+P-Funk > G-Funk
+Jazz > Jazz rap
+Funk > Jazz rap
+Hardcore techno > Happy hardcore
+Breakbeat > Happy hardcore
+Breakbeat > Breakbeat hardcore
+Breakbeat hardcore > Happy hardcore
+Breakbeat hardcore > Jungle
+Acid house > Breakbeat hardcore
+Techno > Breakbeat hardcore
+Breakbeat hardcore > Drum and bass
+Trance > Happy hardcore
+Acid house > Happy hardcore
+Eurodance > Happy hardcore
+IDM > Folktronica
+Folk > Folktronica
+Avant-garde > Folktronica
+Techno > Tech house
+Deep house > Tech house
+Acid house > Tech house
+Progressive house > Tech house
+Tech house > Microhouse
+Minimal techno > Tech house
+Acid house > Minimal techno
+Minimal techno > Microhouse
+Micro house > Folktronica
+IDM > Microhouse
+Computer games > Chiptune
+Synthpop > Chiptune
+Chiptune > Bitpop
+Bitpop > Microhouse
+Computer games > Bitpop
+Synthpop > Bitpop
+New wave > Bitpop
+Tech house > Electro house
+Synthpop > Electropop
+New wave > Electropop
+Disco > Electropop
+Electronic music > Electropop
+Electropop > Dance-pop
+Electrpop > Electroclash
+Electropop > Progressive house
+New wave > Electroclash
+Synthpop > Electroclash
+Electro > Electroclash
+Post-punk > Electroclash
+NDW > Elecroclash
+Electrclash > Electro house
+Electropop > Electro house
+Techno > Electroclash
+Electropunk > Electroclash
+Black metal > Blackgaze
+Shoegazing > Blackgaze
+Post-rock > Blackgaze
+House > Electroclash
+Electro > Miami bass
+Breakbeat > Miami bass
+Miami bass > Crunk
+House > Electroclash
+Harcore techno > Gabber
+Industrial > Gabber
+Gabber > Happy harcore
+Gabber > Hardstyle
+Techno > Tech trance
+Hard trance > Hardstyle
+Hardcore techno > Hard trance
+New Beat > Hard trance
+Happy hardcore > Hard trance
+Darkcore > Drum and bass
+Darkcore > Darkstep
+Techstep > Darkstep
+Techstep > Neurofunk
+Gabber > Darkstep
+Industrial > Darkstep
+Funk > Neurofunk
+Techno > Neurofunk
+Jazz > Neurofunk
+House > Neurofunk
+Dark ambient > Neurofunk
+Darkcore > Techstep
+Techno > Techstep
+House > Techstep
+Electronic music > Electropunk
+Stoner rock > Stoner sludge
+Sludge metal > Stoner sludge
+Jungle > Dubstep
+Electro > FREESTYLE
+Italo disco > Freestyle
+Hip hop > Freestyle
+Latin > Freestyle
+Post-disco > Freestyle
+Disco > Freestyle
+Post hardcore > Electronicore
+Metalcore > Electronicore
+Techno > Electronicore
+Trans > Electronicore
+Dubstep > Electronicore
+Chiptune > Nintendocore
+Heavy metal > Nintendocore
+Melodic metalcore > Nintendocore
+Post hardcore > Nintendocore
+Funk metal > Rap metal
+Hardcore > Breakcore
+Drum and bass > Breakcore
+IDM > Breakcore
+Hardcore techno > Digital hardcore
+Hardcore punk > Digital hardcore
+Drum and bass > Digital hardcore
+Breakcore > Digital hardcore
+Noise rock > Digital hardcore
+Noise > Digital hardcore
+Riot grrrl > Digital hardcore
+Industrial rock > Digital hardcore
+Hip hop > IDM
+Ambient > Post-metal
+Cajun, Zydeco > Swamp pop
+Swamp blues > Swamp pop
+Rock R roll > Swamp pop
+Country > Swamp pop
+New wave > Dance-punk
+Krautrock > Dance-punk
+Post-punk > Dance-punk
+Funk rock > Dance-punk
+Disco > Dance-punk
+Post-punk > Post-punk revival
+New wave > Post-punk revival
+Garage rock > Post-punk revival
+Dance-punk > New rave
+Post-punk revival > New rave
+New wave > New rave
+Electronic music > New rave
+Noise > Glitch
+Techno > Glitch
+Industriel > Glitch
+IDM > Glitch
+Breakbeat > Glitch
+Synthpop > Glitch
+House > Glitch
+Acid house > New Beat
+Acid house > Acid techno
+Industrial > Acid techno
+Ambient > Illbient
+Trip hop > Illbient
+Alternative rock > Alternative hip hop
+Funk > Alternative hip hop
+Fusion > Alternative hip hop
+Electronic > Alternative hip hop
+Drum & bass > Illbient
+Dub > Illbient
+Alternative hip hop > Industrial hip hop
+Industrial > Industrial hip hop
+Dub > Industrial hip hop
+Industrial rock > Industrial hip hop
+Industrial hip hop > Illbient
+Industrial hip hop > Gabber
+Hardcore hip hop > Southern hip hop
+Miami bass > Southern hip hop
+Electro > Southern hip hop
+Southern hip hop > Crunk
+Southern hip hop > Trap
+Contemp. R&B > West Coast hip hop
+Funk > West Coast hip hop
+Soul > West Coast hip hop
+West Coast hip hop > Gangsta rap
+West Coast hip hop > G-Funk
+Dancehall > East Coast hip hop
+Toasting > East Coast hip hop
+Funk > East Coast hip hop
+Disco > East Coast hip hop
+R&B > East Coast hip hop
+East Coast hip hop > Hardcore hip hop
+Jazz > East Coast hip hop
+East Coast hip hop > Jazz rap
+East Coast hip hop > Freestyle rap
+Toasting > Grime
+Toasting > Dancehall
+Toasting > Dub
+Trap > Future bass
+Bassline > Future bass
+House > Hip house
+Hip hop > Hip house
+Hip house > Eurodance
+Deep house > Tropical house
+Dancehall > Tropical house
+Latin > Merengue
+Merengue > Reggaeton
+Reggae > Reggeaton
+Hip hop > Reggeaton
+Dancehall > Reggeaton
+Acid rock > Goa trance
+Jangle pop > Indie pop

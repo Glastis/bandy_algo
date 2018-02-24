@@ -4,8 +4,8 @@
 -- Time: 08:08
 --
 
-local constant = require('constants')
-local utilitie = require('utilities')
+local constant = require('common.constants')
+local utilitie = require('common.utilities')
 
 local stat = {}
 

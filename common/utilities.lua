@@ -4,15 +4,20 @@
 -- Time: 14:51
 --
 
-local file = require('file')
+local file = require('common.file')
 
 local utilities = {}
+
+local function trim(str)
+    return str:gsub("^%s+", ""):gsub("%s+$", "")
+end
+utilities.trim = trim
 
 local function get_elem_in_table(table, elem)
     local i
 
     i = 1
-    while i < #table do
+    while i <= #table do
         if table[i] == elem then
             return i
         end

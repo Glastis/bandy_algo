@@ -43,6 +43,21 @@ local function write(filepath, str, mode)
 end
 file.write = write
 
+local function read_line(filepath, file)
+    local line
+
+    if not file then
+        file = io.open(filepath, 'rb')
+    end
+    line = file:read()
+    if line then
+       return file, line
+    end
+    file:close()
+    return nil
+end
+file.read_line = read_line
+
 return file
 
 
