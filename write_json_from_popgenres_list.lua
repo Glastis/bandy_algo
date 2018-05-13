@@ -5,7 +5,7 @@
 --
 
 local file = require('common.file')
-local json = require('common.json')
+local json = require('common.json_loc')
 local utilitie = require('common.utilities')
 
 local arg = {...}
@@ -88,7 +88,6 @@ function get_sub_from_genre(tree, name)
             sub[#sub + 1] = {}
             sub[#sub]['name'] = tree[i]['sub']
             sub[#sub]['sub'] = get_sub_from_genre(tree, tree[i]['sub'])
---            utilitie.var_dump(sub[#sub], true)
         end
         i = i + 1
     end
@@ -120,7 +119,9 @@ function core(filepath)
 --    utilitie.var_dump(tree, true)
     root = get_root_genres(tree)
 --    utilitie.var_dump(tree, true)
-    utilitie.var_dump(json.encode(get_sub_from_genre(tree, 'Heavy metal'), true))
+    result = get_sub_from_genre(tree, 'Heavy metal')
+    utilitie.var_dump(result, true)
+    utilitie.var_dump(json.encode(result, true))
     --[[build_result_tree(tree, root, result)
     utilitie.var_dump(result, true)]]
     return true
