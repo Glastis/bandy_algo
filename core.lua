@@ -9,13 +9,21 @@ local constant = require('common.constants')
 local utilitie = require('common.utilities')
 
 -- DIFFERENTS SCORES SCRIPTS
-local view = require('score/views')
+local view = require('score.views')
+local genre = require('score.genres')
+
+-- CONSTANTS
+local genre_tree
+genre_tree = genre.get_genres()
 
 function score_artist(stat_view, artist, label)
     local score
 
     score = view.get_score_stat(stat_view, artist)
+    score = genre.get_score_genre(genre_tree, artist.genre, label.searched_genre) + score
     -- add here other scores
+--    utilitie.var_dump(label, true)
+--    utilitie.var_dump(artist, true)
     return score
 end
 
