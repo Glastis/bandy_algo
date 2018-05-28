@@ -70,9 +70,11 @@ function insert_users()
     data = {}
     while i < USERS_AMOUNT do
         elem = {}
-        elem[constant.FIELD_USER_ID] = i
+        elem[constant.FIELD_USER_CHECKSUM] = i
         elem[constant.FIELD_USER_COUNTRY] = "empty"
         elem[constant.FIELD_USER_CITY] = "empty"
+        elem[constant.FIELD_USER_VIEW_FACEBOOK] = math.random(0, 10000)
+        elem[constant.FIELD_USER_VIEW_TWITTER] = math.random(0, 5000)
         if i > LABEL_AMOUNT then
             elem[constant.FIELD_USER_ROLE] = constant.ROLE_MUSICIAN
         else
@@ -94,9 +96,7 @@ function insert_artists()
     while i < ARTIST_AMOUNT do
         elem = {}
         elem[constant.FIELD_ARTIST_ID] = i
-        elem[constant.FIELD_ARTIST_USER_ID] = i + LABEL_AMOUNT
-        elem[constant.FIELD_ARTIST_VIEW_FACEBOOK] = math.random(0, 10000)
-        elem[constant.FIELD_ARTIST_VIEW_TWITTER] = math.random(0, 5000)
+        elem[constant.FIELD_ARTIST_USER_CHECKSUM] = i + LABEL_AMOUNT
         elem[constant.FIELD_ARTIST_VIEW_YOUTUBE] = math.random(0, 3000)
         elem[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD] = math.random(0, 1000)
         elem[constant.FIELD_ARTIST_GENRE] = get_random_genre()

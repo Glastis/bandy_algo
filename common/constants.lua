@@ -24,22 +24,24 @@ constant.COLLECTION_USER = 'users'
 --[[
 ----    FIELDS
 --]]
-constant.FIELD_LABEL_ID = '_id'
+constant.FIELD_LABEL_CHECKSUM = '_id'
+constant.FIELD_LABEL_ID = 'increments'
 constant.FIELD_LABEL_GENRE = 'favorite_genre'
 constant.FIELD_LABEL_ARTIST_SCORE = 'artist_score'
 
-constant.FIELD_USER_ID = '_id'
+constant.FIELD_USER_CHECKSUM = '_id'
 constant.FIELD_USER_COUNTRY = 'country'
 constant.FIELD_USER_CITY = 'city'
 constant.FIELD_USER_ROLE = 'type'
+constant.FIELD_USER_VIEW_FACEBOOK = 'facebook_likes'
+constant.FIELD_USER_VIEW_TWITTER = 'twitter_follows'
 
-constant.FIELD_ARTIST_USER_ID = 'user_id'
-constant.FIELD_ARTIST_ID = '_id'
+constant.FIELD_ARTIST_USER_CHECKSUM = 'user_id'
+constant.FIELD_ARTIST_CHECKSUM = '_id'
+constant.FIELD_ARTIST_ID = 'increment'
 constant.FIELD_ARTIST_GENRE = 'genre'
-constant.FIELD_ARTIST_VIEW_FACEBOOK = 'view_facebook'
-constant.FIELD_ARTIST_VIEW_TWITTER = 'view_twitter'
-constant.FIELD_ARTIST_VIEW_YOUTUBE = 'view_youtube'
-constant.FIELD_ARTIST_VIEW_SOUNDCLOUD = 'view_soundcloud'
+constant.FIELD_ARTIST_VIEW_YOUTUBE = 'youtube_views'
+constant.FIELD_ARTIST_VIEW_SOUNDCLOUD = 'soundcloud_views'
 
 --[[
 ----    ROLES

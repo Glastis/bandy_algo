@@ -8,6 +8,7 @@ local stat = require('common.stats')
 local db = require('common.database')
 local utilitie = require('common.utilities')
 local constant = require('common.constants')
+local data_input = require('bandy.data_input')
 
 local views = {}
 
@@ -23,7 +24,9 @@ local function get_stats_view_artists()
     local collection
     local search
 
-    collection = db.get_collection(constant.COLLECTION_ARTIST)
+    collection = {}
+    collection[constant.COLLECTION_ARTIST] = db.get_collection(constant.COLLECTION_ARTIST)
+    collection[constant.COLLECTION_USER] = db.get_collection(constant.COLLECTION_USER)
     stats_view = {}
     view = {}
     facebook = {}
@@ -34,10 +37,10 @@ local function get_stats_view_artists()
     id = 1
 
     search[constant.FIELD_ARTIST_ID] = id
-    result = collection:find_one(search)
+    result = collection[constant.COLLECTION_ARTIST]:find_one(search)
     while result do
         search[constant.FIELD_ARTIST_ID] = id
-        result = collection:find_one(search)
+        result = collection[constant.COLLECTION_ARTIST]:find_one(search)
         if not result then
             view.facebook = stat.median(facebook)
             view.youtube = stat.median(youtube)
@@ -52,10 +55,15 @@ local function get_stats_view_artists()
             stats_view.average = view
             return stats_view
         end
-        facebook[#facebook + 1] = result[constant.FIELD_ARTIST_VIEW_FACEBOOK]
-        youtube[#youtube + 1] = result[constant.FIELD_ARTIST_VIEW_TWITTER]
         twitter[#twitter + 1] = result[constant.FIELD_ARTIST_VIEW_YOUTUBE]
         soundcloud[#soundcloud + 1] = result[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD]
+        result = data_input.get_user_from_artist(result, collection[constant.COLLECTION_USER])
+        if result then
+            facebook[#facebook + 1] = result[constant.FIELD_USER_VIEW_FACEBOOK]
+            youtube[#youtube + 1] = result[constant.FIELD_USER_VIEW_TWITTER]
+        else
+            print('ERROR: user not found for artist ' .. tostring(id))
+        end
         print('artist ' .. id .. ' done')
         id = id + 1
     end
@@ -94,17 +102,17 @@ local function get_score_stat_ave(average, actual)
 end
 views.get_score_stat_ave = get_score_stat_ave
 
-local function get_score_stat(stat_view, artist)
+local function get_score_stat(stat_view, artist, user)
     local score
 
-    score = get_score_stat_med(stat_view.median.facebook, artist.view_facebook)
-    score = get_score_stat_med(stat_view.median.youtube, artist.view_youtube) + score
-    score = get_score_stat_med(stat_view.median.twitter, artist.view_twitter) + score
-    score = get_score_stat_med(stat_view.median.soundcloud, artist.view_soundcloud) + score
-    score = get_score_stat_ave(stat_view.average.facebook, artist.view_facebook) + score
-    score = get_score_stat_ave(stat_view.average.youtube, artist.view_youtube) + score
-    score = get_score_stat_ave(stat_view.average.twitter, artist.view_twitter) + score
-    score = get_score_stat_ave(stat_view.average.soundcloud, artist.view_soundcloud) + score
+    score = get_score_stat_med(stat_view.median.facebook, user[constant.FIELD_USER_VIEW_FACEBOOK])
+    score = get_score_stat_med(stat_view.median.twitter, user[constant.FIELD_USER_VIEW_TWITTER]) + score
+    score = get_score_stat_med(stat_view.median.youtube, artist[constant.FIELD_ARTIST_VIEW_YOUTUBE]) + score
+    score = get_score_stat_med(stat_view.median.soundcloud, artist[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD]) + score
+    score = get_score_stat_ave(stat_view.average.facebook, user[constant.FIELD_USER_VIEW_FACEBOOK]) + score
+    score = get_score_stat_ave(stat_view.average.twitter, user[constant.FIELD_USER_VIEW_TWITTER]) + score
+    score = get_score_stat_ave(stat_view.average.youtube, artist[constant.FIELD_ARTIST_VIEW_YOUTUBE]) + score
+    score = get_score_stat_ave(stat_view.average.soundcloud, artist[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD]) + score
     return score
 end
 views.get_score_stat = get_score_stat
