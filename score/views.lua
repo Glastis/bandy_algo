@@ -21,6 +21,7 @@ local function get_stats_view_artists()
     local twitter
     local soundcloud
     local collection
+    local search
 
     collection = db.get_collection(constant.COLLECTION_ARTIST)
     stats_view = {}
@@ -29,10 +30,14 @@ local function get_stats_view_artists()
     youtube = {}
     twitter = {}
     soundcloud = {}
+    search = {}
     id = 1
-    result = collection:find_one({_id = id})
+
+    search[constant.FIELD_ARTIST_ID] = id
+    result = collection:find_one(search)
     while result do
-        result = collection:find_one({_id = id})
+        search[constant.FIELD_ARTIST_ID] = id
+        result = collection:find_one(search)
         if not result then
             view.facebook = stat.median(facebook)
             view.youtube = stat.median(youtube)
@@ -47,10 +52,10 @@ local function get_stats_view_artists()
             stats_view.average = view
             return stats_view
         end
-        facebook[#facebook + 1] = result.view_facebook
-        youtube[#youtube + 1] = result.view_youtube
-        twitter[#twitter + 1] = result.view_twitter
-        soundcloud[#soundcloud + 1] = result.view_soundcloud
+        facebook[#facebook + 1] = result[constant.FIELD_ARTIST_VIEW_FACEBOOK]
+        youtube[#youtube + 1] = result[constant.FIELD_ARTIST_VIEW_TWITTER]
+        twitter[#twitter + 1] = result[constant.FIELD_ARTIST_VIEW_YOUTUBE]
+        soundcloud[#soundcloud + 1] = result[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD]
         print('artist ' .. id .. ' done')
         id = id + 1
     end

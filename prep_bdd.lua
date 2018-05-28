@@ -12,6 +12,8 @@ local genre = require('score.genres')
 -- TEST DATABASE CONSTANTS
 local ARTIST_AMOUNT = 100
 local LABEL_AMOUNT = 100
+local USERS_AMOUNT = ARTIST_AMOUNT + LABEL_AMOUNT
+
 
 -- CONTANTS
 local GENRE_LIST, GENRE_AMOUNT = genre.get_genres()
@@ -42,45 +44,73 @@ function get_random_genre()
 end
 
 function insert_labels()
-    local i = 1
-    local data = {}
+    local i
+    local data
     local elem
 
+    i = 1
+    data = {}
     while i < LABEL_AMOUNT do
         elem = {}
-        elem._id = i
-        elem.name = "label_" .. tostring(i)
-        elem.artist_score = "empty"
-        elem.searched_genre = get_random_genre()
+        elem[constant.FIELD_LABEL_ID] = i
+        elem[constant.FIELD_LABEL_ARTIST_SCORE] = "empty"
+        elem[constant.FIELD_LABEL_GENRE] = get_random_genre()
         data[i] = elem
         i = i + 1
     end
-    elem = db.insert_multi(data, constant.COLLECTION_LABEL)
+    return db.insert_multi(data, constant.COLLECTION_LABEL)
+end
+
+function insert_users()
+    local i
+    local data
+    local elem
+
+    i = 1
+    data = {}
+    while i < USERS_AMOUNT do
+        elem = {}
+        elem[constant.FIELD_USER_ID] = i
+        elem[constant.FIELD_USER_COUNTRY] = "empty"
+        elem[constant.FIELD_USER_CITY] = "empty"
+        if i > LABEL_AMOUNT then
+            elem[constant.FIELD_USER_ROLE] = constant.ROLE_MUSICIAN
+        else
+            elem[constant.FIELD_USER_ROLE] = constant.ROLE_LABEL
+        end
+        data[i] = elem
+        i = i + 1
+    end
+    return db.insert_multi(data, constant.COLLECTION_USER)
 end
 
 function insert_artists()
-    local i = 1
-    local data = {}
+    local i
+    local data
     local elem
 
+    i = 1
+    data = {}
     while i < ARTIST_AMOUNT do
         elem = {}
-        elem._id = i
-        elem.view_facebook = math.random(0, 10000)
-        elem.view_twitter = math.random(0, 5000)
-        elem.view_youtube = math.random(0, 3000)
-        elem.view_soundcloud = math.random(0, 1000)
-        elem.name = "artist_" .. tostring(i)
-        elem.genre = get_random_genre()
+        elem[constant.FIELD_ARTIST_ID] = i
+        elem[constant.FIELD_ARTIST_USER_ID] = i + LABEL_AMOUNT
+        elem[constant.FIELD_ARTIST_VIEW_FACEBOOK] = math.random(0, 10000)
+        elem[constant.FIELD_ARTIST_VIEW_TWITTER] = math.random(0, 5000)
+        elem[constant.FIELD_ARTIST_VIEW_YOUTUBE] = math.random(0, 3000)
+        elem[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD] = math.random(0, 1000)
+        elem[constant.FIELD_ARTIST_GENRE] = get_random_genre()
         data[i] = elem
         i = i + 1
     end
-    elem = db.insert_multi(data, constant.COLLECTION_ARTIST)
+    return db.insert_multi(data, constant.COLLECTION_ARTIST)
 end
 
 function main()
+    db.drop_collection(constant.COLLECTION_USER)
     db.drop_collection(constant.COLLECTION_ARTIST)
     db.drop_collection(constant.COLLECTION_LABEL)
+    insert_users()
     insert_artists()
     insert_labels()
     print('Done')
