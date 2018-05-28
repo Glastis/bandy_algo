@@ -37,7 +37,7 @@ function score_all_artists(stat_view, label, collection_artist, collection_user)
     result = collection_artist:find_one(search)
     while result do
         retval[#retval + 1] = {}
-        retval[#retval][constant.FIELD_ARTIST_ID] = search[constant.FIELD_ARTIST_ID]
+        retval[#retval][constant.FIELD_ARTIST_CHECKSUM] = search[constant.FIELD_ARTIST_ID]
         retval[#retval].score = score_artist(stat_view, result, label, data_input.get_user_from_artist(result, collection_user))
         search[constant.FIELD_ARTIST_ID] = search[constant.FIELD_ARTIST_ID] + 1
         result = collection_artist:find_one(search)
