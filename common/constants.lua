@@ -10,7 +10,7 @@ constant = {}
 --[[
 ----    DATABASE
 --]]
-constant.DATABASE_NAME = 'testdb'
+constant.DATABASE_NAME = 'bandy_algo_db'
 constant.DATABASE_ADDRESS = 'mongodb://localhost:27017/'
 constant.DEFAULT_COLLECTION = 'testcollection'
 
@@ -38,7 +38,7 @@ constant.FIELD_USER_VIEW_TWITTER = 'twitter_follows'
 
 constant.FIELD_ARTIST_USER_CHECKSUM = 'user_id'
 constant.FIELD_ARTIST_CHECKSUM = '_id'
-constant.FIELD_ARTIST_ID = 'increment'
+constant.FIELD_ARTIST_ID = 'increments'
 constant.FIELD_ARTIST_GENRE = 'genre'
 constant.FIELD_ARTIST_VIEW_YOUTUBE = 'youtube_views'
 constant.FIELD_ARTIST_VIEW_SOUNDCLOUD = 'soundcloud_views'
