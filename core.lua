@@ -21,8 +21,8 @@ function score_artist(stat_view, artist, label, user)
     local score
 
     utilitie.var_dump(artist, true)
-        utilitie.var_dump(label, true)
-	    utilitie.var_dump(user, true)
+    utilitie.var_dump(label, true)
+    utilitie.var_dump(user, true)
     score = view.get_score_stat(stat_view, artist, user)
     score = genre.get_score_genre(genre_tree, artist[constant.FIELD_ARTIST_GENRE], label[constant.FIELD_LABEL_GENRE]) + score
     -- add here other scores

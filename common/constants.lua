@@ -17,7 +17,7 @@ constant.DEFAULT_COLLECTION = 'testcollection'
 --[[
 ----    COLLECTIONS
 --]]
-constant.COLLECTION_ARTIST = 'artists'
+constant.COLLECTION_ARTIST = 'musicians'
 constant.COLLECTION_LABEL = 'labels'
 constant.COLLECTION_USER = 'users'
 
