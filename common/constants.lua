@@ -10,7 +10,7 @@ constant = {}
 --[[
 ----    DATABASE
 --]]
-constant.DATABASE_NAME = 'bandy_algo_db'
+constant.DATABASE_NAME = 'bandy_db'
 constant.DATABASE_ADDRESS = 'mongodb://localhost:27017/'
 constant.DEFAULT_COLLECTION = 'testcollection'
 
@@ -25,24 +25,32 @@ constant.COLLECTION_USER = 'users'
 ----    FIELDS
 --]]
 constant.FIELD_LABEL_CHECKSUM = '_id'
+constant.FIELD_LABEL_CHECKSUM_SUB = 'key'
 constant.FIELD_LABEL_ID = 'increments'
 constant.FIELD_LABEL_GENRE = 'favorite_genre'
 constant.FIELD_LABEL_ARTIST_SCORE = 'artist_score'
 
+-- USER DEPRECATED --
 constant.FIELD_USER_CHECKSUM = '_id'
+constant.FIELD_USER_CHECKSUM_SUB = 'key'
 constant.FIELD_USER_COUNTRY = 'country'
 constant.FIELD_USER_CITY = 'city'
 constant.FIELD_USER_ROLE = 'type'
 constant.FIELD_USER_VIEW_FACEBOOK = 'facebook_likes'
+constant.FIELD_USER_ID_FACEBOOK = 'facebook_id'
 constant.FIELD_USER_VIEW_TWITTER = 'twitter_follows'
 
 constant.FIELD_ARTIST_USER_CHECKSUM = 'user_id'
 constant.FIELD_ARTIST_CHECKSUM = '_id'
+constant.FIELD_ARTIST_CHECKSUM_SUB = 'key'
 constant.FIELD_ARTIST_ID = 'increments'
 constant.FIELD_ARTIST_GENRE = 'genre'
 constant.FIELD_ARTIST_VIEW_YOUTUBE = 'youtube_views'
+constant.FIELD_ARTIST_ID_YOUTUBE = 'youtube_id'
+constant.FIELD_ARTIST_VIEW_FACEBOOK = 'facebook_likes'
+constant.FIELD_ARTIST_ID_FACEBOOK = 'facebook_id'
 constant.FIELD_ARTIST_VIEW_SOUNDCLOUD = 'soundcloud_views'
-
+constant.FIELD_ARTIST_VIEW_TWITTER = 'twitter_follows'
 --[[
 ----    ROLES
 --]]

@@ -48,14 +48,14 @@ function insert_labels()
     local data
     local elem
 
-    i = 1
+    i = 0
     data = {}
-    while i < LABEL_AMOUNT do
+    while i <= LABEL_AMOUNT do
         elem = {}
         elem[constant.FIELD_LABEL_ID] = i
         elem[constant.FIELD_LABEL_ARTIST_SCORE] = "empty"
         elem[constant.FIELD_LABEL_GENRE] = get_random_genre()
-        data[i] = elem
+        data[#data + 1] = elem
         i = i + 1
     end
     return db.insert_multi(data, constant.COLLECTION_LABEL)
@@ -66,11 +66,12 @@ function insert_users()
     local data
     local elem
 
-    i = 1
+    i = 0
     data = {}
-    while i < USERS_AMOUNT do
+    while i <= USERS_AMOUNT do
         elem = {}
-        elem[constant.FIELD_USER_CHECKSUM] = i
+        elem[constant.FIELD_USER_CHECKSUM] = {}
+        elem[constant.FIELD_USER_CHECKSUM][constant.FIELD_USER_CHECKSUM_SUB] = i
         elem[constant.FIELD_USER_COUNTRY] = "empty"
         elem[constant.FIELD_USER_CITY] = "empty"
         elem[constant.FIELD_USER_VIEW_FACEBOOK] = math.random(0, 10000)
@@ -80,7 +81,7 @@ function insert_users()
         else
             elem[constant.FIELD_USER_ROLE] = constant.ROLE_LABEL
         end
-        data[i] = elem
+        data[#data + 1] = elem
         i = i + 1
     end
     return db.insert_multi(data, constant.COLLECTION_USER)
@@ -91,16 +92,16 @@ function insert_artists()
     local data
     local elem
 
-    i = 1
+    i = 0
     data = {}
-    while i < ARTIST_AMOUNT do
+    while i <= ARTIST_AMOUNT do
         elem = {}
         elem[constant.FIELD_ARTIST_ID] = i
         elem[constant.FIELD_ARTIST_USER_CHECKSUM] = i + LABEL_AMOUNT
         elem[constant.FIELD_ARTIST_VIEW_YOUTUBE] = math.random(0, 3000)
         elem[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD] = math.random(0, 1000)
         elem[constant.FIELD_ARTIST_GENRE] = get_random_genre()
-        data[i] = elem
+        data[#data + 1] = elem
         i = i + 1
     end
     return db.insert_multi(data, constant.COLLECTION_ARTIST)
