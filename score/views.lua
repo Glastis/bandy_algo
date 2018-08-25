@@ -5,10 +5,7 @@
 --
 
 local stat = require('common.stats')
-local db = require('common.database')
-local utilitie = require('common.utilities')
 local constant = require('common.constants')
-local data_input = require('bandy.data_input')
 
 -- DATABASE
 local MongoClient = require("mongorover.MongoClient")
@@ -43,9 +40,7 @@ local function get_stats_view_artists()
     search[constant.FIELD_ARTIST_ID] = 0
     result = collection[constant.COLLECTION_ARTIST]:find_one(search)
     while true do
-        utilitie.var_dump(search, true)
         result = collection[constant.COLLECTION_ARTIST]:find_one(search)
-        utilitie.var_dump(search, true)
         if not result then
             view.facebook = stat.median(facebook)
             view.youtube = stat.median(youtube)
@@ -64,7 +59,6 @@ local function get_stats_view_artists()
         soundcloud[#soundcloud + 1] = result[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD]
         facebook[#facebook + 1] = result[constant.FIELD_ARTIST_VIEW_FACEBOOK]
         youtube[#youtube + 1] = result[constant.FIELD_ARTIST_VIEW_TWITTER]
-        print('artist ' .. search[constant.FIELD_ARTIST_ID] .. ' done')
         search[constant.FIELD_ARTIST_ID] = search[constant.FIELD_ARTIST_ID] + 1
     end
     return false

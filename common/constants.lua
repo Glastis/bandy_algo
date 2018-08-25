@@ -27,18 +27,16 @@ constant.COLLECTION_USER = 'users'
 constant.FIELD_LABEL_CHECKSUM = '_id'
 constant.FIELD_LABEL_CHECKSUM_SUB = 'key'
 constant.FIELD_LABEL_ID = 'increments'
+constant.FIELD_LABEL_COUNTRY = 'country'
+constant.FIELD_LABEL_CITY = 'city'
 constant.FIELD_LABEL_GENRE = 'favorite_genre'
 constant.FIELD_LABEL_ARTIST_SCORE = 'artist_score'
 
--- USER DEPRECATED --
 constant.FIELD_USER_CHECKSUM = '_id'
 constant.FIELD_USER_CHECKSUM_SUB = 'key'
 constant.FIELD_USER_COUNTRY = 'country'
 constant.FIELD_USER_CITY = 'city'
 constant.FIELD_USER_ROLE = 'type'
-constant.FIELD_USER_VIEW_FACEBOOK = 'facebook_likes'
-constant.FIELD_USER_ID_FACEBOOK = 'facebook_id'
-constant.FIELD_USER_VIEW_TWITTER = 'twitter_follows'
 
 constant.FIELD_ARTIST_USER_CHECKSUM = 'user_id'
 constant.FIELD_ARTIST_CHECKSUM = '_id'
@@ -46,11 +44,10 @@ constant.FIELD_ARTIST_CHECKSUM_SUB = 'key'
 constant.FIELD_ARTIST_ID = 'increments'
 constant.FIELD_ARTIST_GENRE = 'genre'
 constant.FIELD_ARTIST_VIEW_YOUTUBE = 'youtube_views'
-constant.FIELD_ARTIST_ID_YOUTUBE = 'youtube_id'
 constant.FIELD_ARTIST_VIEW_FACEBOOK = 'facebook_likes'
-constant.FIELD_ARTIST_ID_FACEBOOK = 'facebook_id'
 constant.FIELD_ARTIST_VIEW_SOUNDCLOUD = 'soundcloud_views'
 constant.FIELD_ARTIST_VIEW_TWITTER = 'twitter_follows'
+
 --[[
 ----    ROLES
 --]]
@@ -61,27 +58,39 @@ constant.ROLE_ADMIN = 'admin'
 --[[
 ----    SCORE VIEWS
 --]]
-constant.MEDIAN_TIERS_1 = 0.5 -- from 0 to 1, 0 == every artist, and 1 == only first one
-constant.MEDIAN_TIERS_1_GAIN = 1
-constant.MEDIAN_TIERS_2 = 0.7 -- from 0 to 1, 0 == every artist, and 1 == only first one
-constant.MEDIAN_TIERS_2_GAIN = 2
-constant.MEDIAN_TIERS_3 = 0.9 -- from 0 to 1, 0 == every artist, and 1 == only first one
-constant.MEDIAN_TIERS_3_GAIN = 4
+constant.SCORE_VIEW_MULT = 2
 
+constant.SCORE_VIEW_MULT_MEDIAN = 1 * constant.SCORE_VIEW_MULT
+constant.MEDIAN_TIERS_1 = 0.5 -- from 0 to 1, 0 == every artist, and 1 == only first one
+constant.MEDIAN_TIERS_1_GAIN = 1 * constant.SCORE_VIEW_MULT_MEDIAN
+constant.MEDIAN_TIERS_2 = 0.7 -- from 0 to 1, 0 == every artist, and 1 == only first one
+constant.MEDIAN_TIERS_2_GAIN = 2 * constant.SCORE_VIEW_MULT_MEDIAN
+constant.MEDIAN_TIERS_3 = 0.9 -- from 0 to 1, 0 == every artist, and 1 == only first one
+constant.MEDIAN_TIERS_3_GAIN = 4 * constant.SCORE_VIEW_MULT_MEDIAN
+
+constant.SCORE_VIEW_MULT_AVERAGE = 2 * constant.SCORE_VIEW_MULT
 constant.AVERAGE_TIERS_1 = 1 -- X times better than average, from 0 to infinite
-constant.AVERAGE_TIERS_1_GAIN = 1
+constant.AVERAGE_TIERS_1_GAIN = 1 * constant.SCORE_VIEW_MULT_AVERAGE
 constant.AVERAGE_TIERS_2 = 1.5 -- X times better than average, from 0 to infinite
-constant.AVERAGE_TIERS_2_GAIN = 2
+constant.AVERAGE_TIERS_2_GAIN = 2 * constant.SCORE_VIEW_MULT_AVERAGE
 constant.AVERAGE_TIERS_3 = 2 -- X times better than average, from 0 to infinite
-constant.AVERAGE_TIERS_3_GAIN = 3
+constant.AVERAGE_TIERS_3_GAIN = 3 * constant.SCORE_VIEW_MULT_AVERAGE
 
 --[[
 ----    SCORE GENRES
 --]]
-constant.GENRE_MULT = 5
-constant.GENRE_DISTANT_GAIN = 0 * constant.GENRE_MULT
-constant.GENRE_CLOSE_GAIN = 1 * constant.GENRE_MULT
-constant.GENRE_SUB_GAIN = 2 * constant.GENRE_MULT
-constant.GENRE_EXACT_GAIN = 3 * constant.GENRE_MULT
+constant.SCORE_GENRE_MULT = 5
+constant.GENRE_DISTANT_GAIN = 0 * constant.SCORE_GENRE_MULT
+constant.GENRE_CLOSE_GAIN = 1 * constant.SCORE_GENRE_MULT
+constant.GENRE_SUB_GAIN = 2 * constant.SCORE_GENRE_MULT
+constant.GENRE_EXACT_GAIN = 3 * constant.SCORE_GENRE_MULT
+
+--[[
+----    SCORE LOCATION
+--]]
+constant.SCORE_LOCATION_MULT = 1
+constant.LOCATION_DIFFERENT_COUNTRY = 0 * constant.SCORE_LOCATION_MULT
+constant.LOCATION_SAME_COUNTRY = 1 * constant.SCORE_LOCATION_MULT
+constant.LOCATION_SAME_CITY = 3 * constant.SCORE_LOCATION_MULT
 
 return constant

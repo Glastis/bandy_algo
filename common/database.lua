@@ -8,6 +8,7 @@
 local mongo = require('mongorover.MongoClient')
 local utilities = require('common.utilities')
 local constant = require('common.constants')
+local bson = require("mongorover.luaBSONObjects")
 
 -- CONSTANTS
 local DATABASE_NAME = constant.DATABASE_NAME
@@ -142,5 +143,10 @@ local function drop_collection(collection, db, db_address)
 	return collection:drop()
 end
 database.drop_collection = drop_collection
+
+local function object_id(id)
+	return bson.ObjectId.new(id)
+end
+database.object_id = object_id
 
 return database

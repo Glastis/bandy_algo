@@ -13,6 +13,7 @@ local json = require('common.json')
 -- DIFFERENTS SCORES SCRIPTS
 local view = require('score.views')
 local genre = require('score.genres')
+local location = require('score.location')
 
 -- DATABASE
 local MongoClient = require("mongorover.MongoClient")
@@ -23,16 +24,17 @@ local db_database = db_client:getDatabase(constant.DATABASE_NAME)
 local genre_tree
 genre_tree = genre.get_genres()
 
-function score_artist(stat_view, artist, label)
+function score_artist(stat_view, artist, label, user)
     local score
 
     score = view.get_score_stat(stat_view, artist)
     score = genre.get_score_genre(genre_tree, artist[constant.FIELD_ARTIST_GENRE], label[constant.FIELD_LABEL_GENRE]) + score
+    score = location.get_score_location(user, label) + score
     -- add here other scores
     return score
 end
 
-function score_all_artists(stat_view, label, collection_artist)
+function score_all_artists(stat_view, label, collection_artist, collection_users)
     local retval
     local result
     local search
@@ -44,8 +46,7 @@ function score_all_artists(stat_view, label, collection_artist)
     while result do
         retval[#retval + 1] = {}
         retval[#retval][constant.FIELD_ARTIST_CHECKSUM] = result[constant.FIELD_ARTIST_CHECKSUM][constant.FIELD_ARTIST_CHECKSUM_SUB]
-        retval[#retval].score = score_artist(stat_view, result, label)
---        retval[#retval].score = score_artist(stat_view, result, label, nil)
+        retval[#retval].score = score_artist(stat_view, result, label, data_input.get_user_from_artist(result, collection_users))
         search[constant.FIELD_ARTIST_ID] = search[constant.FIELD_ARTIST_ID] + 1
         result = collection_artist:find_one(search)
     end
@@ -65,8 +66,9 @@ function score_label(stat_view)
     collection[constant.COLLECTION_LABEL] = db_database:getCollection(constant.COLLECTION_LABEL)
     result = collection[constant.COLLECTION_LABEL]:find_one(search)
     collection[constant.COLLECTION_ARTIST] = db_database:getCollection(constant.COLLECTION_ARTIST)
+    collection[constant.COLLECTION_USER] = db_database:getCollection(constant.COLLECTION_USER)
     while result do
-        artist_score[constant.FIELD_LABEL_ARTIST_SCORE] = score_all_artists(stat_view, result, collection[constant.COLLECTION_ARTIST])
+        artist_score[constant.FIELD_LABEL_ARTIST_SCORE] = score_all_artists(stat_view, result, collection[constant.COLLECTION_ARTIST], collection[constant.COLLECTION_USER])
         collection[constant.COLLECTION_LABEL]:update_one(search, {["$set"] = artist_score})
         print('Label: ' .. tostring(result[constant.FIELD_LABEL_ID]) .. ' done')
         search[constant.FIELD_LABEL_ID] = search[constant.FIELD_LABEL_ID] + 1
