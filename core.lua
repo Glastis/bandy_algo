@@ -14,6 +14,7 @@ local json = require('common.json')
 local view = require('score.views')
 local genre = require('score.genres')
 local location = require('score.location')
+local filled_profile = require('score.filled_profile')
 
 -- DATABASE
 local MongoClient = require("mongorover.MongoClient")
@@ -30,6 +31,7 @@ function score_artist(stat_view, artist, label, user)
     score = view.get_score_stat(stat_view, artist)
     score = genre.get_score_genre(genre_tree, artist[constant.FIELD_ARTIST_GENRE], label[constant.FIELD_LABEL_GENRE]) + score
     score = location.get_score_location(user, label) + score
+    score = filled_profile.get_score_filled_profile(artist, user) + score
     -- add here other scores
     return score
 end
