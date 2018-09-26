@@ -10,6 +10,8 @@ local utilitie = require('common.utilities')
 local data_input = require('bandy.data_input')
 local json = require('common.json')
 
+local args = {...}
+
 -- DIFFERENTS SCORES SCRIPTS
 local view = require('score.views')
 local genre = require('score.genres')
@@ -55,7 +57,7 @@ function score_all_artists(stat_view, label, collection_artist, collection_users
     return json.stringify(retval)
 end
 
-function score_label(stat_view)
+function score_label(stat_view, label_increment)
     local collection
     local result
     local artist_score
@@ -70,26 +72,44 @@ function score_label(stat_view)
     collection[constant.COLLECTION_ARTIST] = db_database:getCollection(constant.COLLECTION_ARTIST)
     collection[constant.COLLECTION_USER] = db_database:getCollection(constant.COLLECTION_USER)
     while result do
-        artist_score[constant.FIELD_LABEL_ARTIST_SCORE] = score_all_artists(stat_view, result, collection[constant.COLLECTION_ARTIST], collection[constant.COLLECTION_USER])
-        collection[constant.COLLECTION_LABEL]:update_one(search, {["$set"] = artist_score})
-        print('Label: ' .. tostring(result[constant.FIELD_LABEL_ID]) .. ' done')
+        if not label_increment or label_increment == result[constant.FIELD_LABEL_ID] then
+            artist_score[constant.FIELD_LABEL_ARTIST_SCORE] = score_all_artists(stat_view, result, collection[constant.COLLECTION_ARTIST], collection[constant.COLLECTION_USER])
+            collection[constant.COLLECTION_LABEL]:update_one(search, {["$set"] = artist_score})
+            print('Label: ' .. tostring(result[constant.FIELD_LABEL_ID]) .. ' done')
+        end
         search[constant.FIELD_LABEL_ID] = search[constant.FIELD_LABEL_ID] + 1
         result = collection[constant.COLLECTION_LABEL]:find_one(search)
     end
     return true
 end
 
-function score_core()
+function score_core(label_increment)
     local stat_view
 
     stat_view = view.get_stats_view_artists()
-    score_label(stat_view)
+    score_label(stat_view, label_increment)
 end
 
-function core()
+function core(label_increment)
     print('Score calc begin')
-    score_core()
+    score_core(label_increment)
     print('Score calc done')
 end
 
-core()
+function check_args(arg)
+    local i
+
+    i = 1
+    while arg[i] do
+        if arg[i] == constant.ARGUMENT_ONLY_ONE_LABEL or arg[i] == constant.ARGUMENT_ONLY_ONE_LABEL_SHORT then
+            if not arg[i + 1] or not tonumber(arg[i + 1]) then
+                error('Wrong usage of label: --label increment_number')
+            end
+            return tonumber(arg[i + 1])
+        end
+        i = i + 1
+    end
+    return nil
+end
+
+core(check_args(args))

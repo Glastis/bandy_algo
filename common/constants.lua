@@ -22,6 +22,12 @@ constant.COLLECTION_LABEL = 'labels'
 constant.COLLECTION_USER = 'users'
 
 --[[
+----    ARGUMENTS
+--]]
+constant.ARGUMENT_ONLY_ONE_LABEL = '--label'
+constant.ARGUMENT_ONLY_ONE_LABEL_SHORT = '-l'
+
+--[[
 ----    FIELDS
 --]]
 constant.FIELD_LABEL_CHECKSUM = '_id'

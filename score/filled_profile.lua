@@ -15,12 +15,12 @@ local function get_tiers_value(filled_ratio)
 
     i = 1
     while constant.FILLED_PROFILE_TIERS[i] do
-        if filled_ratio <= constant.FILLED_PROFILE_TIERS[#constant.FILLED_PROFILE_TIERS][constant.SCORE_FILLED_PROFILE_FIELD_VALUE] then
-            return constant.FILLED_PROFILE_TIERS[#constant.FILLED_PROFILE_TIERS][constant.SCORE_FILLED_PROFILE_FIELD_GAIN]
+        if filled_ratio <= constant.FILLED_PROFILE_TIERS[i][constant.SCORE_FILLED_PROFILE_FIELD_VALUE] then
+            return constant.FILLED_PROFILE_TIERS[i][constant.SCORE_FILLED_PROFILE_FIELD_GAIN]
         end
         i = i + 1
     end
-    error('get_score_filled_profile: get_tiers_value: ratio must be between 0 and 1. Currently:' .. tostring(filled_ratio))
+    error('get_score_filled_profile: get_tiers_value: ratio must be between 0 and ' .. tostring(constant.FILLED_PROFILE_TIERS[#constant.FILLED_PROFILE_TIERS][constant.SCORE_FILLED_PROFILE_FIELD_VALUE]) .. '. Currently:' .. tostring(filled_ratio))
 end
 
 local function get_score_filled_profile(artist, user)
