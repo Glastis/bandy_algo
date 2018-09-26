@@ -57,7 +57,7 @@ function score_all_artists(stat_view, label, collection_artist, collection_users
     return json.stringify(retval)
 end
 
-function score_label(stat_view, label_increment)
+function score_label(stat_view, label_increment, artist_increment)
     local collection
     local result
     local artist_score
@@ -72,7 +72,7 @@ function score_label(stat_view, label_increment)
     collection[constant.COLLECTION_ARTIST] = db_database:getCollection(constant.COLLECTION_ARTIST)
     collection[constant.COLLECTION_USER] = db_database:getCollection(constant.COLLECTION_USER)
     while result do
-        if not label_increment or label_increment == result[constant.FIELD_LABEL_ID] then
+        if not label_increment or label_increment == result[constant.FIELD_LABEL_CHECKSUM][constant.FIELD_LABEL_CHECKSUM_SUB] then
             artist_score[constant.FIELD_LABEL_ARTIST_SCORE] = score_all_artists(stat_view, result, collection[constant.COLLECTION_ARTIST], collection[constant.COLLECTION_USER])
             collection[constant.COLLECTION_LABEL]:update_one(search, {["$set"] = artist_score})
             print('Label: ' .. tostring(result[constant.FIELD_LABEL_ID]) .. ' done')
@@ -83,33 +83,38 @@ function score_label(stat_view, label_increment)
     return true
 end
 
-function score_core(label_increment)
+function score_core(label_increment, artist_increment)
     local stat_view
 
     stat_view = view.get_stats_view_artists()
-    score_label(stat_view, label_increment)
+    score_label(stat_view, label_increment, artist_increment)
 end
 
-function core(label_increment)
+function core(label_increment, artist_increment)
     print('Score calc begin')
-    score_core(label_increment)
+    score_core(label_increment, artist_increment)
     print('Score calc done')
 end
 
 function check_args(arg)
     local i
+    local lab_inc
+    local user_inc
 
     i = 1
+    lab_inc = nil
+    user_inc = nil
     while arg[i] do
         if arg[i] == constant.ARGUMENT_ONLY_ONE_LABEL or arg[i] == constant.ARGUMENT_ONLY_ONE_LABEL_SHORT then
-            if not arg[i + 1] or not tonumber(arg[i + 1]) then
+            if not arg[i + 1] then
                 error('Wrong usage of label: --label increment_number')
             end
-            return tonumber(arg[i + 1])
+            lab_inc = arg[i + 1]
+            i = i + 1
         end
         i = i + 1
     end
-    return nil
+    return lab_inc, user_inc
 end
 
 core(check_args(args))

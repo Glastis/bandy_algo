@@ -6,6 +6,7 @@
 
 local stat = require('common.stats')
 local constant = require('common.constants')
+local utilitie = require('common.utilities')
 
 -- DATABASE
 local MongoClient = require("mongorover.MongoClient")
@@ -55,10 +56,18 @@ local function get_stats_view_artists()
             stats_view.average = view
             return stats_view
         end
-        twitter[#twitter + 1] = result[constant.FIELD_ARTIST_VIEW_YOUTUBE]
-        soundcloud[#soundcloud + 1] = result[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD]
-        facebook[#facebook + 1] = result[constant.FIELD_ARTIST_VIEW_FACEBOOK]
-        youtube[#youtube + 1] = result[constant.FIELD_ARTIST_VIEW_TWITTER]
+        if result[constant.FIELD_ARTIST_VIEW_YOUTUBE] then
+            youtube[#youtube + 1] = result[constant.FIELD_ARTIST_VIEW_YOUTUBE]
+        end
+        if result[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD] then
+            soundcloud[#soundcloud + 1] = result[constant.FIELD_ARTIST_VIEW_SOUNDCLOUD]
+        end
+        if result[constant.FIELD_ARTIST_VIEW_FACEBOOK] then
+            facebook[#facebook + 1] = result[constant.FIELD_ARTIST_VIEW_FACEBOOK]
+        end
+        if result[constant.FIELD_ARTIST_VIEW_YOUTUBE] then
+            twitter[#twitter + 1] = result[constant.FIELD_ARTIST_VIEW_YOUTUBE]
+        end
         search[constant.FIELD_ARTIST_ID] = search[constant.FIELD_ARTIST_ID] + 1
     end
     return false

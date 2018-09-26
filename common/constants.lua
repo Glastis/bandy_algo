@@ -11,6 +11,7 @@ constant = {}
 ----    DATABASE
 --]]
 constant.DATABASE_NAME = 'bandy_db'
+--constant.DATABASE_NAME = 'bandy_algo_db'
 constant.DATABASE_ADDRESS = 'mongodb://localhost:27017/'
 constant.DEFAULT_COLLECTION = 'testcollection'
 
@@ -26,6 +27,8 @@ constant.COLLECTION_USER = 'users'
 --]]
 constant.ARGUMENT_ONLY_ONE_LABEL = '--label'
 constant.ARGUMENT_ONLY_ONE_LABEL_SHORT = '-l'
+constant.ARGUMENT_ONLY_ONE_ARTIST = '--artist'
+constant.ARGUMENT_ONLY_ONE_ARTIST_SHORT = '-a'
 
 --[[
 ----    FIELDS
